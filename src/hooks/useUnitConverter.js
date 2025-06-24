@@ -62,7 +62,7 @@ export function useUnitConverter() {
     if (type === 'temperature') {
       const res = tempConvert(parseFloat(value), from, to);
       console.log('Temperature result:', res); // Debug
-      setConvertedVal(res.toFixed(2));
+      setConvertedVal(res);
       return;
     }
 
@@ -77,7 +77,7 @@ export function useUnitConverter() {
 
     const res = (value * fromType.base_val) / toType.base_val;
     console.log('Conversion result:', res); // Debug
-    setConvertedVal(res.toFixed(2));
+    setConvertedVal(res);
   }, []);
 
   return { convertedVal, convert };
