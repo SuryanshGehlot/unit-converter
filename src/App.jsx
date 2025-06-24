@@ -30,7 +30,11 @@ function App() {
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100"
-      style={{ backgroundImage: "url('/unit-converter/bgimage.png')" }}>
+      style={{
+        backgroundImage: "url('/unit-converter/bgimage.png')",
+        backgroundSize: "cover"
+      }}
+    >
       <h1 className="text-3xl sm:text-4xl text-black font-semibold mb-6">Unit Converter</h1>
       <div className="w-full max-w-lg bg-white/20 border border-gray-600 rounded-xl p-6 backdrop-blur-md shadow-md">
         <div className="mb-4">
@@ -60,7 +64,7 @@ function App() {
           />
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
