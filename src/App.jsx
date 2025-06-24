@@ -35,8 +35,8 @@ function App() {
         backgroundSize: "cover"
       }}
     >
-      <h1 className="text-3xl sm:text-4xl text-white font-semibold mb-6">Unit Converter</h1>
-      <div className="w-full max-w-lg bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-md shadow-md">
+      <h1 className="text-3xl sm:text-4xl text-black/80  font-semibold mb-6">Unit Converter</h1>
+      <div className="w-full max-w-lg bg-white/10 border border-black/30 rounded-xl p-6 backdrop-blur-md shadow-md">
         <div className="mb-4">
           <InputBox
             label="From"
