@@ -1,12 +1,37 @@
-# React + Vite
+# 🔁 Unit Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Unit Converter built with **React**, **Vite**, and **Tailwind CSS**. It supports real-time unit conversions with a sleek glassmorphic interface and a science-themed background.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔄 **Auto-converts** on input change – no button needed
+- 📏 Supports **Length**, **Mass**, and **Temperature** conversions
+- 🧠 Smart unit reset when measurement type changes
+- 🖼️ Custom **4K background image** (science-themed)
+- 🧊 Clean, **glassmorphic UI**
+- 💻 Fully responsive for all screen sizes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🌐 Live Demo
+
+👉 [View Live Site](https://SuryanshGehlot.github.io/unit-converter)
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v16 or above)
+- npm (or yarn)
+
+### Installation
+
+```bash
+git clone https://github.com/SuryanshGehlot/unit-converter.git
+cd unit-converter
+npm install
+npm run dev
