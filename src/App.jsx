@@ -29,14 +29,14 @@ function App() {
   }, [value, from, to, type, convert]);
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center p-4 bg-gray-100"
+    <div className="w-full min-h-screen flex flex-col items-center justify-center p-4 bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 text-white"
       style={{
         backgroundImage: "url('/unit-converter/bgimage.png')",
         backgroundSize: "cover"
       }}
     >
-      <h1 className="text-3xl sm:text-4xl text-black font-semibold mb-6">Unit Converter</h1>
-      <div className="w-full max-w-lg bg-white/20 border border-gray-600 rounded-xl p-6 backdrop-blur-md shadow-md">
+      <h1 className="text-3xl sm:text-4xl text-black/80 font-semibold mb-6">Unit Converter</h1>
+      <div className="w-full max-w-lg bg-white/10 border border-black/40 rounded-xl p-6 backdrop-blur-md shadow-md">
         <div className="mb-4">
           <InputBox
             label="From"

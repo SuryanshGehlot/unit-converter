@@ -16,15 +16,15 @@ function InputBox({
   const valueInputId = useId();
 
   return (
-    <div className={`bg-amber-100 p-3 rounded-lg text-sm flex flex-col ${className}`}>
+    <div className={`bg-white/10 p-4 rounded-lg text-sm flex flex-col ${className}`}>
       <div className="flex flex-row gap-4">
         <div className="w-1/2">
-          <label htmlFor={valueInputId} className="text-black/40 mb-2 inline-block">
+          <label htmlFor={valueInputId} className="text-black/80 mb-2 inline-block">
             {label}
           </label>
           <input
             id={valueInputId}
-            className="outline-none w-full bg-transparent py-1.5"
+            className="outline-none w-full py-1.5 bg-black/20 text-white placeholder-white/50 rounded-lg px-1"
             type="number"
             placeholder="Value"
             disabled={valueDisable}
@@ -33,9 +33,9 @@ function InputBox({
           />
         </div>
         <div className="w-1/2 flex flex-col justify-end">
-          <p className="text-black/40 mb-2">Unit</p>
+          <p className="text-black/80 mb-2">Unit</p>
           <select
-            className="rounded-lg px-1 py-1 bg-blue-300 cursor-pointer outline-none"
+            className="rounded-lg px-1 py-1.5 bg-black/20 text-black cursor-pointer outline-none"
             value={selectUnit}
             onChange={(e) => onUnitChange && onUnitChange(e.target.value)}
           >
@@ -48,13 +48,13 @@ function InputBox({
         </div>
       </div>
       <div className="mt-4">
-        <p className="text-black/40 mb-2">Measurement Type</p>
+        <p className="text-black/80 mb-2">Measurement Type</p>
         <select
-          className="rounded-lg px-1 py-1 bg-blue-300 cursor-pointer outline-none w-full"
+          className="rounded-lg px-1 py-1 bg-black/20 text-black cursor-pointer outline-none w-full"
           value={selectType}
           onChange={(e) => onTypeChange && onTypeChange(e.target.value)}
         >
-          {TypeOptions.map((measure) => (
+          {Object.keys(TypeOptions).map((measure) => (
             <option key={measure} value={measure}>
               {measure.charAt(0).toUpperCase() + measure.slice(1)}
             </option>
