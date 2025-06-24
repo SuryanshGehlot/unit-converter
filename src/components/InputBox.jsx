@@ -24,7 +24,7 @@ function InputBox({
           </label>
           <input
             id={valueInputId}
-            className="outline-none w-full py-1.5 bg-black/20 text-white placeholder-white/50 rounded-lg px-1"
+            className="outline-none w-full bg-transparent py-1.5 text-black/80 placeholder-white/50"
             type="number"
             placeholder="Value"
             disabled={valueDisable}
@@ -35,7 +35,7 @@ function InputBox({
         <div className="w-1/2 flex flex-col justify-end">
           <p className="text-black/80 mb-2">Unit</p>
           <select
-            className="rounded-lg px-1 py-1.5 bg-black/20 text-black cursor-pointer outline-none"
+            className="rounded-lg px-1 py-1 bg-white/20 text-black/80 cursor-pointer outline-none"
             value={selectUnit}
             onChange={(e) => onUnitChange && onUnitChange(e.target.value)}
           >
@@ -50,7 +50,7 @@ function InputBox({
       <div className="mt-4">
         <p className="text-black/80 mb-2">Measurement Type</p>
         <select
-          className="rounded-lg px-1 py-1 bg-black/20 text-black cursor-pointer outline-none w-full"
+          className="rounded-lg px-1 py-1 bg-white/20 text-black/80 cursor-pointer outline-none w-full"
           value={selectType}
           onChange={(e) => onTypeChange && onTypeChange(e.target.value)}
         >

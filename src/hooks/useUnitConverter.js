@@ -7,7 +7,7 @@ function tempConvert(value, from, to) {
   // Validate value is a number and not NaN
   if (isNaN(value) || value === null || value === undefined) {
     console.log('Invalid temperature value:', value);
-    return 0; // Return a default value instead of throwing
+    return 0; // Return default value instead of throwing
   }
 
   let fromCelsius;
@@ -23,7 +23,7 @@ function tempConvert(value, from, to) {
       break;
     default:
       console.log('Invalid temperature from unit:', from);
-      return 0; // Return a default value instead of throwing
+      return 0; // Return default value instead of throwing
   }
 
   switch (to) {
@@ -35,7 +35,7 @@ function tempConvert(value, from, to) {
       return (fromCelsius * 9 / 5) + 32;
     default:
       console.log('Invalid temperature to unit:', to);
-      return 0; // Return a default value
+      return 0; // Return default value
   }
 }
 

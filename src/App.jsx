@@ -35,15 +35,15 @@ function App() {
         backgroundSize: "cover"
       }}
     >
-      <h1 className="text-3xl sm:text-4xl text-black/80 font-semibold mb-6">Unit Converter</h1>
-      <div className="w-full max-w-lg bg-white/10 border border-black/40 rounded-xl p-6 backdrop-blur-md shadow-md">
+      <h1 className="text-3xl sm:text-4xl text-white font-semibold mb-6">Unit Converter</h1>
+      <div className="w-full max-w-lg bg-white/10 border border-white/20 rounded-xl p-6 backdrop-blur-md shadow-md">
         <div className="mb-4">
           <InputBox
             label="From"
             value={value}
             onValueChange={setValue}
             onTypeChange={setType}
-            TypeOptions={Object.keys(TypeOptions)}
+            TypeOptions={TypeOptions}
             selectType={type}
             onUnitChange={setFrom}
             unitOptions={Object.keys(TypeOptions[type] || {})}
@@ -56,7 +56,7 @@ function App() {
             value={convertedVal || ''}
             valueDisable={true}
             onTypeChange={setType}
-            TypeOptions={Object.keys(TypeOptions)}
+            TypeOptions={TypeOptions}
             selectType={type}
             onUnitChange={setTo}
             unitOptions={Object.keys(TypeOptions[type] || {})}
